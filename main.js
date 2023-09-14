@@ -43,6 +43,8 @@ var diveSites = {
     "Petrie's Pilar": [12.18695490100768,-68.29696786537608],
     'Bacheloar Beach': [12.125544775691129,-68.28755478921485],
     'Bari': [12.169051826423809,-68.28790119161755],
+    'Mi Dushi': [12.164113120667405,-68.32305192947389],
+    'Knife': [12.168702215949589,-68.30641686916353],
 
 };
 
@@ -111,6 +113,20 @@ var diveLog = {
             date: "2023-09-13",
             time: "3:30 PM",
             notes: "Our dive at Bari turned into quite an adventure. Initially, we decided to drift dive from Bari reef to Buddy Dive. At the time, the current was flowing north toward Buddy Dive. However, about 15 minutes into the dive, the current shifted, and we found ourselves swimming against a decent current. This turned the dive into more of a workout than expected, but it was somewhat enjoyable. It was my first time exploring this area, and I noticed that Buddy Dive has planted some magnificent Elk Horn coral to the south of the property in about 20 feet of water. It was a pleasant surprise!",
+        }
+    ],
+    'Mi Dushi': [
+        {
+            date: "2023-09-14",
+            time: "8:15 AM",
+            notes: "Relaxing dive.",
+        }
+    ],
+    'Knife': [
+        {
+            date: "2023-09-14",
+            time: "9:30 AM",
+            notes: "Saw the smallest Scorpian Fish I have ever seen! Near the end of the dive we also saw a black tip reef shark!",
         }
     ]
     // Add more dive sites as needed
