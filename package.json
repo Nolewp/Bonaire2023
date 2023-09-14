@@ -1,0 +1,22 @@
+{
+  "name": "bonaire2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"npx tailwindcss -i ./styles/tailwind.css -o ./styles/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "BONAIRE2023"
+  },
+  "author": "J Ochs",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.29",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.3.3"
+  }
+}
