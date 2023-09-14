@@ -1,5 +1,5 @@
 // Create a map and set its initial view
-var map = L.map('map').setView([12.17, -68.2624], 11);
+var map = L.map('map', {minZoom: 3,}).setView([12.17, -68.2624], 11);
 
 // Add a tile layer to the map
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
