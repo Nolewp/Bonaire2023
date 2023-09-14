@@ -122,7 +122,7 @@ for (var siteName in diveSites) {
         var lng = coordinates[1];
         console.log(siteName);
         var site = L.marker([lat, lng], { icon: diveFlagIcon }).addTo(map);
-        var popup = `<b class="text-2xl">${siteName}</b><br><ul>`
+        var popup = `<b class="text-2xl">${siteName}</b><br><div class="max-h-60 overflow-y-auto p-4"><ul>`
         
         if (diveLog.hasOwnProperty(siteName)) {
             for (var i = 0; i < diveLog[siteName].length; i++) {
@@ -131,9 +131,9 @@ for (var siteName in diveSites) {
             }
         }
         else {
-            popup += `<li>No Dive Logs </li>`;
+            popup += `<li>No Dive Logs </li></div>`;
         }
-        popup +=`</ul>`
+        popup +=`</ul></div>`
         site.bindPopup(popup);
 
 

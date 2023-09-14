@@ -582,6 +582,18 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.max-h-48 {
+  max-height: 12rem;
+}
+
+.max-h-60 {
+  max-height: 15rem;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -593,6 +605,10 @@ video {
 .bg-blue-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-3 {
