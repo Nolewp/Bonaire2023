@@ -36,7 +36,8 @@ function onMapClick(e) {
     var lng = e.latlng.lng;
 
     // Display the coordinates on the page
-    document.getElementById('coordinates').innerHTML =  lat + ',' + lng;
+    //document.getElementById('coordinates').innerHTML =  lat + ',' + lng;
+    console.log(lat + ',' + lng);
 }
 
 // Attach the click event handler to the map
