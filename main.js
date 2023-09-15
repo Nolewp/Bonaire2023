@@ -60,6 +60,7 @@ var diveSites = {
     'Bari': [12.169051826423809,-68.28790119161755],
     'Mi Dushi': [12.164113120667405,-68.32305192947389],
     'Knife': [12.168702215949589,-68.30641686916353],
+    'Oil Slick Leap': [12.199813023532597,-68.30865383148195],
 
 };
 
@@ -142,6 +143,13 @@ var diveLog = {
             date: "2023-09-14",
             time: "9:30 AM",
             notes: "Saw the smallest Scorpian Fish I have ever seen! Near the end of the dive we also saw a black tip reef shark!",
+        }
+    ],
+    'Oil Slick Leap': [
+        {
+            date: "2023-09-15",
+            time: "9:30 AM",
+            notes: "Frist time I have dove this lcation. The leap is not too bad, 9ft or so kinda fun. Saw a couple adult Drum Fish. Some golden eels. Light north saw current."
         }
     ]
     // Add more dive sites as needed
