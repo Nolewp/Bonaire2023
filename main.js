@@ -1,20 +1,34 @@
 // Create a map and set its initial view
-var map = L.map('map', {minZoom: 3,}).setView([12.17, -68.2624], 11);
+var map = L.map('map', {
+    minZoom: 3,
+}).setView([12.17, -68.2624], 11);
 
 // Add a tile layer to the map
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+// var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// }).addTo(map);
 
 
-// var customIcon = L.divIcon({
-//     className: 'leaflet-label', // Use the leaflet-label class defined in the CSS
-//     html: 'Label Text' // The label content
+// // var USGS = L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}', {
+// // 	attribution: 'Tiles courtesy of the <a href="https://usgs.gov/">U.S. Geological Survey</a>'
+// // });
+
+// var OpenTopo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+// 	attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 // });
 
-// var Buddy = L.marker([12.17, -68.2624], { icon: customIcon }).addTo(map);
-// Buddy.bindPopup("<b>Hello!</b><br>This is a custom popup.");
+// var baseMaps = {
+//     'Open Street Map' : osm,
+//     // 'USGS' : USGS ,
+//     'Open topo' : OpenTopo
+// }
+
+// L.control.layers(baseMaps, {}, {position: 'topleft', maxWidth: '30px' }).addTo(map);
+
 
 function onMapClick(e) {
     // Get the clicked coordinates from the event object
@@ -136,7 +150,7 @@ for (var siteName in diveSites) {
         var coordinates = diveSites[siteName];
         var lat = coordinates[0];
         var lng = coordinates[1];
-        console.log(siteName);
+        //console.log(siteName);
         var site = L.marker([lat, lng], { icon: diveFlagIcon }).addTo(map);
         var popup = `<b class="text-2xl">${siteName}</b><br><div class="max-h-60 overflow-y-auto p-4"><ul>`
         
