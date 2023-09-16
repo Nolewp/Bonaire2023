@@ -149,7 +149,7 @@ var diveLog = {
         {
             date: "2023-09-15",
             time: "9:30 AM",
-            notes: "Frist time I have dove this lcation. The leap is not too bad, 9ft or so kinda fun. Saw a couple adult Drum Fish. Some golden eels. Light north saw current."
+            notes: "Frist time I dove this location. The leap is not too bad, 9ft or so kinda fun. Saw a couple adult Drum Fish. Some golden eels. Light north south current."
         }
     ]
     // Add more dive sites as needed
